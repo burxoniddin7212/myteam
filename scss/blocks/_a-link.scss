@@ -1,0 +1,15 @@
+.site-nav__link {
+  @include a-link;
+  transition: all 0.5s ease;
+}
+
+.site-nav__link:hover {
+  color: $light-coral;
+}
+
+@include breakpoint-down (768px) {
+   .site-nav__link {
+    font-size: 18px;
+    line-height: 28px;
+   }
+}
